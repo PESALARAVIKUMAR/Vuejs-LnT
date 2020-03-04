@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./../Scripts/vue.js"></script>
+</head>
+<body>
+    <div id="dv" style="display:table" >
+        <div v-bind:style="textStyle3">{{current || 0}}</div>
+        <br>
+        
+        <input type="button" value="CE" v-on:click="cEfunction()" v-bind:style="textStyle2">
+        <input type="button" value="C" v-on:click="cFunction()" v-bind:style="textStyle2">
+        <input type="button" value="%" v-on:click="PercentageFunction()" v-bind:style="textStyle2">
+        <input type="button" value="/" v-on:click="divisionFunction()" v-bind:style="textStyle2">
+        <br>
+        
+        <input type="button" value="7" v-on:click="sevenFunction()"v-bind:style="textStyle1">
+        <input type="button" value="8" v-on:click="eightFunction()"v-bind:style="textStyle1">
+        <input type="button" value="9" v-on:click="nineFunction()"v-bind:style="textStyle1">
+        <input type="button" value="*" v-on:click="multiplyFunction()"v-bind:style="textStyle2">
+        <br>
+        
+        <input type="button" value="4" v-on:click="fourFunction()"v-bind:style="textStyle1">
+        <input type="button" value="5" v-on:click="fiveFunction()"v-bind:style="textStyle1">
+        <input type="button" value="6" v-on:click="sixFunction()"v-bind:style="textStyle1">
+        <input type="button" value="-" v-on:click="substractionFunction()"v-bind:style="textStyle2">
+        <br>
+        
+        <input type="button" value="1" v-on:click="oneFunction()"v-bind:style="textStyle1">
+        <input type="button" value="2" v-on:click="twoFunction()"v-bind:style="textStyle1">
+        <input type="button" value="3" v-on:click="threeFunction()"v-bind:style="textStyle1">
+        <input type="button" value="+" v-on:click="addFunction()"v-bind:style="textStyle2">
+        <br>
+        
+        <input type="button" value="+or-" v-on:click="negateFunction()"v-bind:style="textStyle2">
+        <input type="button" value="0" v-on:click="zeroFunction()"v-bind:style="textStyle1">
+        <input type="button" value="." v-on:click="dotFunction()"v-bind:style="textStyle2">
+        <input type="button" value="=" v-on:click="equalFunction()"v-bind:style="textStyle2">
+        <br>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
